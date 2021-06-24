@@ -11,18 +11,26 @@ namespace PersonalSiteMVC.Controllers
         }
 
         [HttpGet]
-        public ActionResult About()
+        public ActionResult Resume()
         {
-            ViewBag.Message = "Your app description page.";
+            return View();
+        }
 
+        [HttpGet]
+        public ActionResult Projects()
+        {
+            return View();
+        }
+
+        [HttpGet]
+        public ActionResult Links()
+        {
             return View();
         }
 
         [HttpGet]
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
